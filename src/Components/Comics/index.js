@@ -67,7 +67,7 @@ function Comics(){
                     <td>{comic.title}</td>
                     <td><img src={comic.thumbnail.path+"."+comic.thumbnail.extension} height="75px" width="75px"/></td>
                     <td>
-                        <img src={ (favComics.indexOf(comic.id.toString()) > -1) ? starOk:starNok} height="20px" width="20px" onClick={(e) => handleFavComicsdel(e, comic.id)} />
+                        <img src={ (favComics.indexOf(comic.id.toString()) > -1) ? starOk:starNok} height="20px" width="20px" onClick={(e) => handleFavComics(e, comic.id)} />
                     </td>
                 </tr>
                 ))}
