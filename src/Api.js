@@ -9,7 +9,7 @@ const marvelUrl = axios.create({
 });
 
 const loginUrl = axios.create({
-  baseURL: `http://localhost:8080/api/auth`
+  baseURL: `https://mighty-tundra-25615.herokuapp.com/api/auth`
 });
 
 loginUrl.interceptors.request.use(async config => {
@@ -21,7 +21,7 @@ loginUrl.interceptors.request.use(async config => {
 });
 
 const userUrl = axios.create({
-  baseURL: `http://localhost:8080/user`
+  baseURL: `https://mighty-tundra-25615.herokuapp.com/user`
 });
 
 
